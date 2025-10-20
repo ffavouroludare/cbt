@@ -1,0 +1,229 @@
+{
+"_note": "Each question object includes: id, type (mc/tf/fill), question text, options (for mc), correct answer(s), explanation, and topic.",
+"_note2": "To add new questions, duplicate an entry, assign a new id, and ensure proper JSON formatting. Supported types: 'mc' (multiple choice), 'tf' (true/false), 'fill' (short answer).",
+"questions": [
+{
+"id": 1,
+"type": "mc",
+"question": "What is the main goal of personal hygiene?",
+"options": ["To maintain cleanliness and prevent disease", "To look fashionable", "To spend money on cosmetics", "To impress others"],
+"correct": 0,
+"explanation": "Personal hygiene helps maintain health and prevent the spread of infections.",
+"topic": "personal hygiene"
+},
+{
+"id": 2,
+"type": "tf",
+"question": "Hygiene and cleanliness are the same thing.",
+"correct": false,
+"explanation": "Cleanliness is a part of hygiene, but hygiene also involves habits that preserve health.",
+"topic": "general"
+},
+{
+"id": 3,
+"type": "mc",
+"question": "Which of these is NOT a type of hygiene discussed?",
+"options": ["Food hygiene", "Environmental hygiene", "Personal hygiene", "Financial hygiene"],
+"correct": 3,
+"explanation": "The document discusses food, personal, and environmental hygiene — not financial.",
+"topic": "general"
+},
+{
+"id": 4,
+"type": "mc",
+"question": "Which practice is most important for preventing infection?",
+"options": ["Washing hands with soap", "Sharing towels", "Skipping baths", "Using old water"],
+"correct": 0,
+"explanation": "Proper handwashing removes pathogens that cause disease.",
+"topic": "hand hygiene"
+},
+{
+"id": 5,
+"type": "fill",
+"question": "Personal hygiene helps prevent the spread of _____.",
+"correct": ["disease", "diseases"],
+"explanation": "Good hygiene reduces transmission of communicable diseases.",
+"topic": "personal hygiene"
+},
+{
+"id": 6,
+"type": "tf",
+"question": "Hands should be washed for at least 20 seconds.",
+"correct": true,
+"explanation": "Health guidelines recommend at least 20 seconds for effective cleaning.",
+"topic": "hand hygiene"
+},
+{
+"id": 7,
+"type": "mc",
+"question": "Which of these is a benefit of good personal hygiene?",
+"options": ["Improved self-esteem", "Higher risk of infection", "More bullying", "Weaker immunity"],
+"correct": 0,
+"explanation": "Good hygiene increases confidence and promotes good health.",
+"topic": "psychological"
+},
+{
+"id": 8,
+"type": "mc",
+"question": "After using the toilet, what should you always do?",
+"options": ["Wash hands with soap", "Just rinse with water", "Skip washing", "Share a towel"],
+"correct": 0,
+"explanation": "Proper handwashing prevents fecal-oral disease transmission.",
+"topic": "hand hygiene"
+},
+{
+"id": 9,
+"type": "mc",
+"question": "Which of these can result from poor skin hygiene?",
+"options": ["Boils and rashes", "Improved mood", "Better sleep", "Faster healing"],
+"correct": 0,
+"explanation": "Poor hygiene can cause bacterial and fungal skin infections.",
+"topic": "skin hygiene"
+},
+{
+"id": 10,
+"type": "fill",
+"question": "Use _____ water and mild soap to wash your hair and scalp.",
+"correct": ["clean", "clean water"],
+"explanation": "Clean water and mild soap prevent dandruff and scalp irritation.",
+"topic": "hair hygiene"
+},
+{
+"id": 11,
+"type": "mc",
+"question": "How often should teeth be brushed?",
+"options": ["Twice a day", "Once a week", "After every meal", "Only before dentist visits"],
+"correct": 0,
+"explanation": "Brushing twice daily removes plaque and prevents cavities.",
+"topic": "dental hygiene"
+},
+{
+"id": 12,
+"type": "mc",
+"question": "What type of toothpaste helps protect against cavities?",
+"options": ["Fluoride", "Charcoal", "Sugar-based", "None of the above"],
+"correct": 0,
+"explanation": "Fluoride strengthens enamel and prevents decay.",
+"topic": "dental hygiene"
+},
+{
+"id": 13,
+"type": "fill",
+"question": "Floss at least ____ a day.",
+"correct": ["once", "one", "daily"],
+"explanation": "Daily flossing removes food particles and prevents gum disease.",
+"topic": "dental hygiene"
+},
+{
+"id": 14,
+"type": "mc",
+"question": "Which food supports good dental health?",
+"options": ["Cheese and milk", "Soda", "Candy", "Vinegar"],
+"correct": 0,
+"explanation": "Calcium-rich foods like cheese strengthen teeth.",
+"topic": "nutrition"
+},
+{
+"id": 15,
+"type": "tf",
+"question": "Smoking increases the risk of gum disease.",
+"correct": true,
+"explanation": "Smoking restricts blood flow to gums, causing disease.",
+"topic": "oral health"
+},
+{
+"id": 16,
+"type": "mc",
+"question": "Which body areas produce more sweat and need special attention?",
+"options": ["Armpits and groin", "Forearms", "Ears", "Neck"],
+"correct": 0,
+"explanation": "Sweat-prone areas need regular cleaning to prevent odor.",
+"topic": "body hygiene"
+},
+{
+"id": 17,
+"type": "tf",
+"question": "Drying your body with a clean towel prevents recontamination.",
+"correct": true,
+"explanation": "A clean towel avoids transferring germs back to skin.",
+"topic": "body hygiene"
+},
+{
+"id": 18,
+"type": "mc",
+"question": "Head lice are best prevented by:",
+"options": ["Regular hair washing and not sharing combs", "Using others’ hats", "Skipping washes", "Sleeping with pets"],
+"correct": 0,
+"explanation": "Lice spread through contact and shared personal items.",
+"topic": "hair hygiene"
+},
+{
+"id": 19,
+"type": "mc",
+"question": "What condition results from hardened plaque on teeth?",
+"options": ["Tartar (calculus)", "Cavity", "Tooth fracture", "Dry mouth"],
+"correct": 0,
+"explanation": "Plaque that hardens forms tartar, removable only by professionals.",
+"topic": "dental hygiene"
+},
+{
+"id": 20,
+"type": "tf",
+"question": "Children taught hygiene early are less likely to develop poor habits.",
+"correct": true,
+"explanation": "Early education builds lifelong healthy habits.",
+"topic": "education"
+},
+
+{"id":21,"type":"mc","q":"To reduce head lice risk, you should:","options":["Wash hair and comb with fine-tooth comb","Share combs","Never wash hair","Use someone else’s hat"],"correct":0,"explanation":"Regular washing and combing reduce lice and nits.","topics":["hair"]},
+{"id":22,"type":"tf","q":"Use a wide-toothed comb for wet hair to reduce breakage.","correct":true,"explanation":"Wide-tooth combs are gentler on wet hair and reduce breakage.","topics":["hair"]},
+{"id":23,"type":"fill","q":"Fill in: Keep nails ______ to avoid trapping dirt.","correct":["trimmed","trimmed short","short"],"explanation":"Short, trimmed nails trap less dirt and reduce infection risk.","topics":["nails"]},
+{"id":24,"type":"mc","q":"Dandruff shampoos often contain:","options":["Zinc pyrithione or selenium sulfide","Pure sugar","Sandalwood oil only","Olive oil"],"correct":0,"explanation":"These agents reduce dandruff-causing fungi and oiliness.","topics":["hair"]},
+{"id":25,"type":"mc","q":"For greasy hair, recommended action is:","options":["Wash regularly or use dry shampoo","Avoid washing","Rinse with vinegar only","Use sand"],"correct":0,"explanation":"Washing or dry shampoo helps manage excess oil.","topics":["hair"]},
+{"id":26,"type":"tf","q":"Sharing nail cutters is safe if cleaned afterward.","correct":false,"explanation":"Sharing can transmit infections; avoid sharing personal tools.","topics":["nails"]},
+{"id":27,"type":"mc","q":"Shaving the head can be recommended when:","options":["There is heavy lice infestation","You dislike shampoo","Your teeth hurt","You have a cold"],"correct":0,"explanation":"Shaving may be used where lice are persistent and other measures fail.","topics":["hair"]},
+{"id":28,"type":"fill","q":"Fill in: Use a _____-bristled toothbrush (soft/hard).","correct":["soft","soft-bristled"],"explanation":"Soft bristles clean effectively without damaging gums.","topics":["dental"]},
+{"id":29,"type":"mc","q":"Combing wet hair with a wide-tooth comb helps because it:","options":["Reduces breakage","Cures scalp infections","Colors hair","Prevents dandruff entirely"],"correct":0,"explanation":"Wide-tooth combs reduce pulling and hair loss when wet.","topics":["hair"]},
+{"id":30,"type":"tf","q":"Conditioner is mandatory for healthy hair.","correct":false,"explanation":"Conditioner can help manage hair, but it is not strictly mandatory.","topics":["hair"]},
+{"id":31,"type":"mc","q":"How often should you brush your teeth?","options":["Twice a day","Once a week","Only at dentist visits","Never"],"correct":0,"explanation":"Brush twice daily to remove plaque and protect enamel.","topics":["dental"]},
+{"id":32,"type":"fill","q":"Fill in: Use _____ toothpaste for cavity protection.","correct":["fluoride","fluoride toothpaste"],"explanation":"Fluoride strengthens enamel and reduces cavities.","topics":["dental"]},
+{"id":33,"type":"mc","q":"Cleaning between teeth daily prevents:","options":["Gingivitis and tartar buildup","Hair loss","Broken bones","Poor eyesight"],"correct":0,"explanation":"Interdental cleaning removes plaque where brushes cannot reach.","topics":["dental"]},
+{"id":34,"type":"tf","q":"Community water fluoridation helps protect teeth against cavities.","correct":true,"explanation":"Appropriate fluoride levels aid remineralization of enamel.","topics":["dental","nutrition"]},
+{"id":35,"type":"mc","q":"Tartar (hardened plaque) is removed by:","options":["A dental professional cleaning","Brushing harder at home","Rinsing with water","Using a metal pick by yourself"],"correct":0,"explanation":"Only professionals can remove tartar safely.","topics":["dental"]},
+{"id":36,"type":"mc","q":"Which foods help dental health?","options":["Cheese and plain yogurt","Soda and sweets","Sticky candies","Fruit juices all day"],"correct":0,"explanation":"Calcium-rich foods help remineralize enamel.","topics":["dental","nutrition"]},
+{"id":37,"type":"fill","q":"Fill in: Floss at least ____ a day.","correct":["once","one","daily"],"explanation":"Daily flossing removes interdental plaque.","topics":["dental"]},
+{"id":38,"type":"mc","q":"Poor oral health has been linked to which systemic condition?","options":["Cardiovascular disease","Near-sightedness","Skin eczema","Asthma only"],"correct":0,"explanation":"Oral infections are associated with systemic inflammation and cardiovascular risk.","topics":["dental","health"]},
+{"id":39,"type":"tf","q":"Chewing sugar-free gum can help clean teeth by stimulating saliva.","correct":true,"explanation":"Increased saliva helps neutralize acids and clean food particles.","topics":["dental"]},
+{"id":40,"type":"mc","q":"If teeth are sensitive to cold, you might try:","options":["Desensitizing toothpaste or see a dentist","Brushing aggressively","Chewing ice","Avoid drinking water"],"correct":0,"explanation":"Desensitizing toothpaste or dental care addresses sensitivity.","topics":["dental"]},
+{"id":41,"type":"mc","q":"What habit increases risk of gum disease?","options":["Smoking","Drinking water","Eating vegetables","Brushing twice daily"],"correct":0,"explanation":"Smoking impairs tissue healing and increases periodontal disease risk.","topics":["dental"]},
+{"id":42,"type":"fill","q":"Fill in: Frequent _____ drinks can erode enamel (one word).","correct":["acidic","acidic drinks"],"explanation":"Acidic beverages lower pH and promote enamel demineralization.","topics":["dental","nutrition"]},
+{"id":43,"type":"mc","q":"A key preventive dental step is:","options":["Regular professional cleaning and fluoride","Avoiding the dentist","Self-extraction","No brushing"],"correct":0,"explanation":"Professional care plus daily hygiene prevents many dental issues.","topics":["dental"]},
+{"id":44,"type":"tf","q":"Pregnancy can increase risk of gum inflammation due to hormonal changes.","correct":true,"explanation":"Hormonal changes can cause pregnancy gingivitis; extra care is needed.","topics":["dental","health"]},
+{"id":45,"type":"mc","q":"How should dentures be stored overnight (recommended)?","options":["In a dry container","Kept in while sleeping","Rinsed with bleach","Left in boiling water"],"correct":0,"explanation":"Dry storage overnight reduces Candida growth on dentures.","topics":["appliances","dental"]},
+{"id":46,"type":"mc","q":"When cleaning dentures, avoid using:","options":["Toothpaste (too abrasive)","Denture cleansing tablets weekly","Soft brush made for dentures","Soaking as directed weekly"],"correct":0,"explanation":"Toothpaste can scratch acrylic dentures; use denture cleansers.","topics":["appliances","dental"]},
+{"id":47,"type":"tf","q":"People with intellectual disability may need tailored oral-care interventions.","correct":true,"explanation":"Tailored supports and caregiver training improve oral outcomes for such groups.","topics":["dental","inclusion"]},
+{"id":48,"type":"fill","q":"Fill in: Sucrose fuels bacteria like _____.","correct":["streptococcus mutans","streptococcus mutans"],"explanation":"S. mutans produces acids and helps build plaque when sugar is available.","topics":["dental","nutrition"]},
+{"id":49,"type":"mc","q":"Which habit increases cavity risk most?","options":["Frequent snacking throughout the day","Three structured meals only","Drinking water with meals","Eating crunchy vegetables"],"correct":0,"explanation":"Frequent sugar exposure prolongs acid attacks on enamel.","topics":["dental","nutrition"]},
+{"id":50,"type":"mc","q":"Good hygiene overall leads to:","options":["Lower health costs and better social acceptance","More disease","Higher costs","Worse relationships"],"correct":0,"explanation":"Prevention reduces illness and associated costs and improves social outcomes.","topics":["benefits","personal hygiene"]},
+{"id":51,"type":"mc","q":"Which of these is included in personal grooming but may not be strictly hygienic?","options":["Using perfume or deodorant","Washing hands","Brushing teeth","Trimming nails"],"correct":0,"explanation":"Grooming (e.g., perfume) affects appearance but is not strictly hygiene.","topics":["personal hygiene","grooming"]},
+{"id":52,"type":"tf","q":"Anal hygiene may include washing the anus after defecation.","correct":true,"explanation":"Anal cleansing methods include washing with water or using toilet paper; hands must be washed after.","topics":["personal hygiene"]},
+{"id":53,"type":"mc","q":"What is a common cause of smelly feet?","options":["Bacteria acting on sweat in confined shoes","Lack of exercise","Poor eyesight","Eating spicy food only"],"correct":0,"explanation":"Bacteria break down sweat in socks/shoes producing odor.","topics":["foot hygiene"]},
+{"id":54,"type":"fill","q":"Fill in: Toenails can accumulate dirt and increase risk of _____ (one word).","correct":["fungal infections","infection","fungus"],"explanation":"Dirty toenails can promote fungal growth such as athlete’s foot.","topics":["foot hygiene"]},
+{"id":55,"type":"mc","q":"Podoconiosis (mossy foot) prevention includes:","options":["Wearing shoes regularly","Eating more sugar","Not washing feet","Using scented soaps"],"correct":0,"explanation":"Wearing shoes prevents soil particles from penetrating feet and causing podoconiosis.","topics":["foot hygiene","disease prevention"]},
+{"id":56,"type":"mc","q":"Which is correct about menstrual hygiene?","options":["Wash external genitals daily and change pads regularly","Avoid washing during menstruation","Use dirty cloths","Never change pads"],"correct":0,"explanation":"Clean external washing and frequent change of pads reduces infection risk.","topics":["menstrual hygiene"]},
+{"id":57,"type":"tf","q":"Using scented products excessively on genital areas can cause thrush.","correct":true,"explanation":"Over-cleaning with harsh or scented products can disrupt normal flora and cause yeast infection.","topics":["menstrual hygiene"]},
+{"id":58,"type":"mc","q":"Which area is especially important to clean to prevent trachoma (eye infection)?","options":["Eyes and face daily","Shoes","Ears only","Fingernails only"],"correct":0,"explanation":"Regular face and eye hygiene reduce discharge accumulation and trachoma risk.","topics":["face hygiene","disease prevention"]},
+{"id":59,"type":"fill","q":"Fill in: Clean water and soap help remove _____ and dead skin from the scalp.","correct":["oil","dirt","sebum"],"explanation":"Washing removes oil, dead skin and debris from scalp.","topics":["hair"]},
+{"id":60,"type":"mc","q":"Ear hygiene advice includes:","options":["Wash outer ear with soap and water; do not insert objects into canal","Insert cotton buds deep into ear","Never touch ears","Use sharp objects to clean"],"correct":0,"explanation":"Outer ear washing is fine; avoid inserting objects which may damage the ear.","topics":["ear hygiene"]},
+{"id":61,"type":"mc","q":"Why are underwear and inner clothes recommended to be changed more frequently?","options":["They are next to the skin and collect sweat and cells","Because outer clothes are dirty","To look fashionable","To save water"],"correct":0,"explanation":"Underwear accumulates sweat and skin cells which harbor bacteria.","topics":["clothes hygiene"]},
+{"id":62,"type":"tf","q":"Boiling or ironing washed clothes can help kill lice and nits.","correct":true,"explanation":"Heat treatment via boiling/ironing can destroy lice/nits and reduce reinfestation.","topics":["clothes hygiene"]},
+{"id":63,"type":"fill","q":"Fill in: After handling pets or animals, you should wash your _____ with soap.","correct":["hands","hand"],"explanation":"Animal contact can transfer microbes; handwashing reduces risk.","topics":["personal hygiene"]},
+{"id":64,"type":"mc","q":"What should you do when you cough or sneeze to reduce spread?","options":["Cover mouth and nose with tissue or sleeve","Keep mouth open","Do nothing","Cough into your hand then touch food"],"correct":0,"explanation":"Covering coughs/sneezes prevents dispersal of respiratory droplets.","topics":["respiratory hygiene"]},
+{"id":65,"type":"tf","q":"Washing your face every morning helps remove eye discharge and reduce fly attraction.","correct":true,"explanation":"Eye discharge can attract flies which transmit infections like trachoma.","topics":["face hygiene"]},
+{"id":66,"type":"mc","q":"Which is a correct reason to replace your toothbrush regularly?","options":["Bristles wear and lose effectiveness","It looks new","Color fades","To save toothpaste"],"correct":0,"explanation":"Worn bristles clean less effectively and may harbor bacteria.","topics":["dental"]},
+{"id":67,"type":"mc","q":"Which food component helps remineralize teeth?","options":["Calcium (milk, cheese)","Sucrose","Acidic drinks","Sticky sweets"],"correct":0,"explanation":"Calcium-rich foods help strengthen enamel and remineralize teeth.","topics":["dental","nutrition"]},
+{"id":68,"type":"tf","q":"Regular professional dental checkups can detect problems early and are more affordable long-term.","correct":true,"explanation":"Prevention and early detection reduce the need for expensive restorative work.","topics":["dental"]},
+{"id":69,"type":"mc","q":"What is an advantage of teaching dental hygiene in schools?","options":["Establishes lifelong habits and reduces inequalities in access","Increases sugar consumption","Causes tooth loss","Teaches harmful practices"],"correct":0,"explanation":"School programs reach many children and teach prevention regardless of home access.","topics":["education","dental"]},
+{"id":70,"type":"fill","q":"Fill in: Rinse your mouth after meals or at least ____ to remove debris (one word: during the day).","correct":["during","daytime","during the day"],"explanation":"Rinsing helps displace food particles and reduce plaque formation.","topics":["dental","oral hygiene"]}
+]
+}

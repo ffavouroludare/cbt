@@ -1,0 +1,10 @@
+{
+"_note": "Editable scoreboard data. Teachers can open this file directly and adjust or add entries.",
+"_note2": "Each entry should have a 'name', 'score' (number 0–100), and 'date' in string format.",
+"scores": [
+{ "name": "Amina Bello", "score": 92, "date": "2025-10-10" },
+{ "name": "John Okoro", "score": 85, "date": "2025-10-12" },
+{ "name": "Chidinma Uche", "score": 74, "date": "2025-10-14" },
+{ "name": "Fatima Yusuf", "score": 98, "date": "2025-10-16" }
+]
+}

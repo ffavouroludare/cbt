@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Personal Hygiene &amp; Dental Education Quiz</title>
+
+  <!-- ✅ External stylesheet -->
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Main quiz logic -->
+
+  <script defer src="quiz.js"></script>
+
+</head>
+<body>
+  <!-- ===============================
+       HEADER / APP TITLE
+  ================================== -->
+  <header class="app-header">
+    <div class="logo">Study</div>
+    <div class="titles">
+      <h1>Personal Hygiene &amp; Dental Education Quiz</h1>
+      <p>Interactive learning tool with spaced repetition and scoreboard.</p>
+    </div>
+  </header>
+
+  <!-- ===============================
+       MAIN CONTAINER
+  ================================== -->
+
+  <main id="app">
+    <!-- Start / name input -->
+    <section id="intro" class="card center">
+      <h2>Welcome Learner!</h2>
+      <p>Enter your name to begin:</p>
+      <input id="username" type="text" placeholder="Your name here" />
+      <button id="startBtn" class="btn primary">Start Quiz</button>
+    </section>
+
+<!-- Quiz content dynamically inserted by quiz.js -->
+<section id="quizArea" class="hidden"></section>
+
+<!-- Review area shown at the end -->
+<section id="reviewArea" class="hidden"></section>
+
+<!-- ===============================
+     Drag & Drop Activities
+================================== -->
+<section id="activities" class="hidden">
+  <h2>Interactive Activities</h2>
+
+  <!-- Handwashing -->
+  <div class="card">
+    <h3>Order the Handwashing Steps</h3>
+    <p>Drag each step to its correct position.</p>
+    <div id="handItems" class="drag-grid"></div>
+    <div id="handZones" class="drop-row"></div>
+    <button class="btn" id="checkHand">Check Order</button>
+    <p id="handFeedback" class="feedback"></p>
+  </div>
+
+  <!-- Toothbrushing -->
+  <div class="card">
+    <h3>Order the Toothbrushing Steps</h3>
+    <p>Drag each step to its correct position.</p>
+    <div id="brushItems" class="drag-grid"></div>
+    <div id="brushZones" class="drop-row"></div>
+    <button class="btn" id="checkBrush">Check Order</button>
+    <p id="brushFeedback" class="feedback"></p>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- ===============================
+       SIDEBAR / SCOREBOARD
+  ================================== -->
+
+  <aside id="sidebar" class="sidebar">
+    <button id="toggleSidebar" class="btn small">☰ Menu</button>
+
+
+<div class="sidebar-content hidden">
+  <h2>Scoreboard</h2>
+  <div id="scoreboard"></div>
+  <button id="addScore" class="btn small">Add Entry</button>
+</div>
+
+
+  </aside>
+
+  <!-- ===============================
+       FOOTER
+  ================================== -->
+
+  <footer class="footer">
+    <p>Built for Àdúràgbèmí Àṣàkẹ́</p>
+  </footer>
+</body>
+</html>

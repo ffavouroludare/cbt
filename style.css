@@ -1,0 +1,244 @@
+/* ==========================================================
+Asake 1.0 - style.css
+Modern responsive design for the Personal Hygiene & Dental Education Quiz
+-------------------------------------------------------------------------
+
+Sections:
+
+1. Global variables & base styles
+2. Layout containers
+3. Cards & buttons
+4. Quiz elements
+5. Drag-and-drop activities
+6. Sidebar (scoreboard)
+7. Responsive adjustments
+   ========================================================== */
+
+/* -------------------------
+
+1. GLOBAL & BASE
+   -------------------------- */
+   :root {
+   --accent: #2563eb;
+   --accent-light: #3b82f6;
+   --bg: #f8fafc;
+   --card-bg: #ffffff;
+   --muted: #6b7280;
+   --success: #16a34a;
+   --danger: #dc2626;
+   --radius: 12px;
+   --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+   }
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body {
+font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+margin: 0;
+background: var(--bg);
+color: #0f172a;
+}
+
+/* -------------------------
+2. LAYOUT
+-------------------------- */
+.app-header {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 16px;
+background: linear-gradient(90deg, var(--accent), var(--accent-light));
+color: white;
+box-shadow: var(--shadow);
+}
+
+.app-header .logo {
+background: rgba(255, 255, 255, 0.2);
+border-radius: var(--radius);
+padding: 10px 16px;
+font-weight: bold;
+}
+
+main {
+max-width: 960px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* -------------------------
+3. CARDS & BUTTONS
+-------------------------- */
+.card {
+background: var(--card-bg);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+padding: 16px;
+margin-bottom: 20px;
+}
+
+.btn {
+display: inline-block;
+border: none;
+border-radius: var(--radius);
+cursor: pointer;
+font-weight: 600;
+padding: 10px 16px;
+margin-top: 10px;
+transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn.primary {
+background: var(--accent);
+color: white;
+}
+
+.btn.primary:hover {
+background: var(--accent-light);
+transform: scale(1.02);
+}
+
+.btn.small {
+font-size: 0.85rem;
+padding: 6px 10px;
+}
+
+input[type="text"] {
+width: 100%;
+padding: 10px;
+border-radius: var(--radius);
+border: 1px solid #e5e7eb;
+margin-top: 8px;
+font-size: 1rem;
+}
+
+/* -------------------------
+4. QUIZ ELEMENTS
+-------------------------- */
+.hidden {
+display: none !important;
+}
+
+.feedback {
+margin-top: 10px;
+font-weight: 600;
+}
+
+.feedback.success {
+color: var(--success);
+}
+
+.feedback.error {
+color: var(--danger);
+}
+
+.drag-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 10px;
+}
+
+.drag-item {
+background: #f1f5f9;
+padding: 8px 12px;
+border-radius: var(--radius);
+cursor: grab;
+flex: 1 1 120px;
+text-align: center;
+box-shadow: var(--shadow);
+}
+
+.drop-row {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin: 12px 0;
+}
+
+.drop-zone {
+flex: 1 1 120px;
+min-height: 44px;
+border: 2px dashed #cbd5e1;
+border-radius: var(--radius);
+display: flex;
+align-items: center;
+justify-content: center;
+background: #fff;
+color: var(--muted);
+}
+
+.drop-zone.correct {
+border-color: var(--success);
+background: #ecfdf5;
+}
+
+.drop-zone.incorrect {
+border-color: var(--danger);
+background: #fef2f2;
+}
+
+/* -------------------------
+6. SIDEBAR (SCOREBOARD)
+-------------------------- */
+.sidebar {
+position: fixed;
+top: 10px;
+right: 10px;
+z-index: 20;
+}
+
+.sidebar-content {
+background: var(--card-bg);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+padding: 16px;
+margin-top: 8px;
+max-width: 300px;
+width: 80vw;
+}
+
+#scoreboard {
+font-size: 0.95rem;
+color: var(--muted);
+}
+
+#scoreboard div {
+display: flex;
+justify-content: space-between;
+margin-bottom: 4px;
+}
+
+.footer {
+text-align: center;
+font-size: 0.8rem;
+color: var(--muted);
+padding: 20px 0;
+}
+
+/* -------------------------
+7. RESPONSIVE DESIGN
+-------------------------- */
+@media (max-width: 768px) {
+.app-header {
+flex-direction: column;
+text-align: center;
+}
+
+main {
+padding: 10px;
+}
+
+.sidebar {
+position: static;
+margin-top: 10px;
+text-align: center;
+}
+
+.sidebar-content {
+margin: 0 auto;
+}
+}
